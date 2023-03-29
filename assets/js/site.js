@@ -69,3 +69,13 @@ console.log(apiUrl);
     myApp.appendChild(myResElement);
 
 }
+//BARE IN SIMPEL KODE FOR AT BEDE OM TILLADELSE FRA BRUGER MHT LOKATION
+// const successCallback = (position) => {
+//     console.log(position);
+//   };
+  
+//   const errorCallback = (error) => {
+//     console.log(error);
+//   };
+  
+//   navigator.geolocation.getCurrentPosition(successCallback, errorCallback);
