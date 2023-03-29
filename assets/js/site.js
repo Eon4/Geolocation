@@ -10,7 +10,7 @@ const geoOptions = {
 
 function success(pos) {
     const crd = pos.coords;
-    //myApp.innerText = `${crd} Your current position is: Latitude : ${crd.latitude} Longitude: ${crd.longitude} More or less ${crd.accuracy} meters.`;
+    // myApp.innerText = `${crd} Your current position is: Latitude : ${crd.latitude} Longitude: ${crd.longitude} More or less ${crd.accuracy} meters.`;
     getLocationName(crd.longitude, crd.latitude);
 }
 
@@ -19,15 +19,15 @@ function error(err) {
 }
 
 
-//myApp.innerText = 'test';
+// myApp.innerText = 'test';
 navigator.geolocation.getCurrentPosition(success, error, geoOptions);
 
 
 function getLocationName(myLong, myLat) {
 
     // geo code api https://locationiq.com
-    //const myApiKey = 'pk.439b01bdf321f632f87bd4d2631fe6d0';
-    //const apiUrl = `https://eu1.locationiq.com/v1/reverse?key=${myApiKey}&lat=${myLat}&lon=${myLong}&format=json`;
+    // const myApiKey = 'pk.439b01bdf321f632f87bd4d2631fe6d0';
+    // const apiUrl = `https://eu1.locationiq.com/v1/reverse?key=${myApiKey}&lat=${myLat}&lon=${myLong}&format=json`;
 
 // geo code api https://nominatim  no token
 
@@ -67,8 +67,9 @@ console.log(apiUrl);
         });
 
     myApp.appendChild(myResElement);
-
 }
+
+
 //BARE IN SIMPEL KODE FOR AT BEDE OM TILLADELSE FRA BRUGER MHT LOKATION
 // const successCallback = (position) => {
 //     console.log(position);
