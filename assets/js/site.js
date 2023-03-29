@@ -1,7 +1,7 @@
 
-
+//Fetching Id
 const myApp = document.getElementById('app');
-
+//Timeout
 const geoOptions = {
     enableHighAccuracy: true,
     timeout: 5000,
